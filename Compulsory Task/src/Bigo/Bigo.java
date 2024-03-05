@@ -1,7 +1,7 @@
-package bigo;
+package Bigo;
 import java.util.*;
 
-public class bigo {
+public class Bigo {
 
     public static void main(String[] args) {
         // Testing the algorithms
