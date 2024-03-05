@@ -1,7 +1,7 @@
-package bigo;
+package Bigo;
 import java.util.*;
 
-public class bigo {
+public class Bigo{
 
     public static void main(String[] args) {
         // Testing the algorithms
@@ -28,12 +28,12 @@ public class bigo {
 
     // O(n^2) Algorithm for Iterating Over a 2D Array
     // This basically loops through each column and each row and displaying the values
-    public static void iterate2DArray(int[][] matrix) {
+    public static void iterate2DArray(int[][] matrix){
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < cols; j++){
                 // Process each element in the 2D array
                 System.out.print(matrix[i][j] + " ");
             }
@@ -47,9 +47,8 @@ public class bigo {
         int left = 0;
         int right = sortedList.size() - 1;
 
-        while (left <= right) {
+        while (left <= right){
             int mid = (left + right) / 2;
-
             if (sortedList.get(mid) == elementToInsert) {
                 // Insert at the middle to maintain order
                 sortedList.add(mid, elementToInsert);
